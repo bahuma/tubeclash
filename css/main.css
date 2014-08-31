@@ -128,6 +128,7 @@ aside#sidebar {
 
 aside#sidebar .box{
     border: solid 1px #ddd;
+    margin-bottom: 20px;
 }
 
 aside#sidebar .box h2.title {
@@ -175,6 +176,25 @@ aside#sidebar .box .content{
 #votenowbox ul li a:hover{
     box-shadow: 0 0 5px #000;
     transform: rotate(5deg);
+}
+
+.youtube-thumbnail {
+    position: relative;
+}
+
+.youtube-thumbnail .playbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    transition: all .4s;
+}
+
+.youtube-thumbnail .playbutton:hover {
+    transform: scale(1.3);
 }
 
 
