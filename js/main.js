@@ -92,7 +92,7 @@ var videos = [
 		clash: "b"
 	},
 	{
-		name: "Kaddi",
+		name: "Coldmirror",
 		url: "fWDvy7tN38Y",
 		clash: "b"
 	},
