@@ -58,47 +58,42 @@ function afterGettingData(){
 var videos = [
 	{
 		name: "LeFloid",
-		url: "LLANwGq-Gng",
+		url: "cPukKe-x0-g",
 		clash: "a"
 	},
 	{
 		name: "Taddl",
-		url: "VqHald2aCZ4",
-		clash: "a"
-	},
-	{
-		name: "Kelly",
-		url: "QJaecuwYEAc",
+		url: "cFvhkChiQgI",
 		clash: "a"
 	},
 	{
 		name: "Chan",
-		url: "TWo_EMFHpFE",
+		url: "XWGUmpTDlZI",
 		clash: "a"
 	},
 	{
 		name: "IBlali",
-		url: "HW9plthoL-E",
+		url: "e1Yb8bzYcCs",
 		clash: "a"
 	},
 	{
 		name: "Gronkh",
-		url: "2YegFQ_4wGE",
+		url: "t9WBdGz_jTw",
 		clash: "b"
 	},
 	{
 		name: "GLP",
-		url: "9_EMw9J2E1A",
+		url: "yZ2LqHkOqaA",
 		clash: "b"
 	},
 	{
 		name: "Coldmirror",
-		url: "fWDvy7tN38Y",
+		url: "I_X9mdW7b5g",
 		clash: "b"
 	},
 	{
 		name: "Dr. Allwissend",
-		url: "4xT2G3a1UIs",
+		url: "-jm1ui_kuZY",
 		clash: "b"
 	}
 ];
