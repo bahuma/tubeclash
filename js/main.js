@@ -58,37 +58,32 @@ function afterGettingData(){
 var videos = [
 	{
 		name: "LeFloid",
-		url: "ZR-TWaxmNoc",
+		url: "MFDX2AxKsQE",
 		clash: "a"
 	},
 	{
 		name: "Taddl",
-		url: "HzWF3RP_Cfg",
-		clash: "a"
-	},
-	{
-		name: "IBlali",
-		url: "fKthYFIvAG8",
+		url: "LTCXvctM3ho",
 		clash: "a"
 	},
 	{
 		name: "Gronkh",
-		url: "gVjYy4s_w6o",
+		url: "Qj9wVeGuIPQ",
 		clash: "b"
 	},
 	{
 		name: "GLP",
-		url: "AYk4Tl_f_6Y",
+		url: "dtunekJ0rkY",
 		clash: "b"
 	},
 	{
 		name: "Coldmirror",
-		url: "PLcNt-aPErM",
+		url: "gej21WMdNEc",
 		clash: "b"
 	},
 	{
 		name: "Dr. Allwissend",
-		url: "JgbvL2z-8t0",
+		url: "qjeoOu4BRsA",
 		clash: "b"
 	}
 ];
