@@ -171,6 +171,7 @@ aside#sidebar .box .content{
     line-height: 60px;
     text-align: center;
     transition: all .4s ease;
+    background: #867A1B;
 }
 
 #votenowbox ul li a:hover{
@@ -213,15 +214,7 @@ table#resultlist th{
 
 table#resultlist td {
     font-weight: bold;
-}
-
-table#resultlist tr.clash-a td, .clash-a{
-    background: #d02013;
-    color: #FFF;
-}
-
-table#resultlist tr.clash-b td, .clash-b{
-    background: #00899f;
+    background: #867A1B;
     color: #FFF;
 }
 

@@ -39,9 +39,7 @@ function afterGettingData(){
 
 	videos.every(function(element, index, array) {
 		jQuery('#resultlist tbody').append(
-			'<tr class="clash-' +
-			videos[index].clash + 
-			'"><td>' + 
+			'<tr><td>' + 
 			videos[index].name + 
 			'</td><td>' + 
 			videos[index].points + 
@@ -57,34 +55,24 @@ function afterGettingData(){
 
 var videos = [
 	{
-		name: "LeFloid",
-		url: "MFDX2AxKsQE",
-		clash: "a"
-	},
-	{
 		name: "Taddl",
-		url: "LTCXvctM3ho",
-		clash: "a"
+		url: "h8NPhPjpfXs"
 	},
 	{
 		name: "Gronkh",
-		url: "Qj9wVeGuIPQ",
-		clash: "b"
+		url: "Bmye9jJ5nSY"
 	},
 	{
 		name: "GLP",
-		url: "dtunekJ0rkY",
-		clash: "b"
+		url: "LN6-V0e1XAk"
 	},
 	{
 		name: "Coldmirror",
-		url: "gej21WMdNEc",
-		clash: "b"
+		url: "sceDX05JVqk"
 	},
 	{
 		name: "Dr. Allwissend",
-		url: "qjeoOu4BRsA",
-		clash: "b"
+		url: "pEK2OavX6Qo"
 	}
 ];
 
@@ -93,9 +81,7 @@ moment.locale('de');
 videos.every(function(element, index, array) {
 	jQuery('#votenowbox .content ul').append(
 		'<li>' +
-		'<a class="clash-'+
-		videos[index].clash +
-		'" href="http://youtube.com/watch?v=' +
+		'<a href="http://youtube.com/watch?v=' +
 		videos[index].url + 
 		'" target="_blank">' +
 		videos[index].name +
