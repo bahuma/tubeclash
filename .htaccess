@@ -213,6 +213,12 @@ AddDefaultCharset utf-8
     Options +FollowSymlinks
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
+    
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+    
+    RewriteCond %{http_host} !^bahuma\.io [NC] 
+    Rewriterule ^(.*)$ https://bahuma.io/$1 [L,R=301]
   # RewriteBase /
 </IfModule>
 
