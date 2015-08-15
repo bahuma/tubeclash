@@ -29,6 +29,9 @@ strong, b {
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px; }
+  @media (max-width: 680px) {
+    .wrapper {
+      padding: 20px; } }
   .wrapper h1.title {
     margin-top: 0;
     font-weight: 500; }
