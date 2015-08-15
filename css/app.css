@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #650303;
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+  font-weight: 300;
+  color: #131313;
+  overflow-y: scroll; }
+
+strong, b {
+  font-weight: 500; }
+
+.wrapper {
+  width: 100%;
+  max-width: 680px;
+  background: #FFF;
+  margin: 20px auto;
+  padding: 40px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+  .wrapper h1.title {
+    margin-top: 0;
+    font-weight: 500; }
+  .wrapper a#reload-button {
+    color: #FFF;
+    font-weight: 500;
+    background: #650303;
+    padding: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px; }
+    .wrapper a#reload-button:hover {
+      background: #E60E0E; }
+  .wrapper table {
+    width: 100%;
+    border: solid 1px #C5C5C5; }
+    .wrapper table thead tr {
+      background: #650303;
+      color: #FFF; }
+      .wrapper table thead tr th {
+        text-align: left;
+        padding: 12px 10px;
+        font-weight: 500; }
+        .wrapper table thead tr th:nth-child(2) {
+          text-align: right; }
+        .wrapper table thead tr th:nth-child(3) {
+          text-align: center; }
+    .wrapper table tbody tr:nth-child(even) {
+      background: #E4E4E4; }
+    .wrapper table tbody tr td {
+      padding: 7px 10px;
+      text-align: left; }
+      .wrapper table tbody tr td:nth-child(1) {
+        width: 1px;
+        padding-right: 0; }
+      .wrapper table tbody tr td:nth-child(2) {
+        padding-left: 5px; }
+      .wrapper table tbody tr td:nth-child(1), .wrapper table tbody tr td:nth-child(2) {
+        font-weight: 500; }
+      .wrapper table tbody tr td:nth-child(3) {
+        text-align: right; }
+      .wrapper table tbody tr td:nth-child(4) {
+        text-align: center; }
+      .wrapper table tbody tr td i.fa {
+        color: #650303; }
+        .wrapper table tbody tr td i.fa:hover {
+          color: #E60E0E; }
+
+/*# sourceMappingURL=app.css.map */

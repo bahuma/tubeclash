@@ -1,0 +1,27 @@
+{
+  "name": "tubeclash",
+  "version": "2.0.0",
+  "homepage": "https://bahuma.io/solutions/tubeclash",
+  "authors": [
+    "Maximilian Bachhuber <bahuma20@bahuma-online.de>"
+  ],
+  "description": "Tubeclash voting dashboard",
+  "main": "index.html",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.4.4",
+    "normalize.css": "~3.0.3",
+    "components-font-awesome": "~4.4.0"
+  }
+}

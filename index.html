@@ -1,84 +1,43 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html ng-app="tubeclash">
     <head>
+        <title>Tubeclash Voting Dashboard</title>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>#Tubeclash Voting Ergebnisse</title>
-        <meta name="description" content="Hier seht Ihr die Ergebnisse des Votings für #Tubeclash in Echtzeit">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="icon" href="favicon.ico">
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="./bower_components/normalize.css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./bower_components/components-font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/app.css">
     </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div id="wrapper">
-	        <h1 class="pagetitle">#TubeClash Voting Ergebnisse</h1>
-	        <div id="info">
-	        	<p>Ihr könnt die Videos der einzelnen Youtuber bewerten und dann werden die Likes minus Dislikes gerechnet, um die Punkte zu bekommen.</p>
-	        	<p>Das Voting geht immer von Freitag bis zum Sonntag und dann scheidet der Youtuber mit den webigsten Punkten aus.</p>
-	        </div>
-
-	        <div class="clearfix">
-	        <section id="main">
-		       <table id="resultlist">
-			        <thead>
-			        	<tr><th>Name</th><th>Punkte</th><th>Veränderung</th></tr>
-			        </thead>
-			        <tfoot>
-			        	<tr><td colspan="3"><small>Zuletzt aktualisiert: <span id="last-refresh"></span></small></td></tr>
-			        </tfoot>
-			        <tbody>
-			        	
-			        </tbody>
-		        </table>
-                <!-- <p><strong>Das Voting dieser Woche ist bereits beendet!</strong></p>
-                <p>Ab Freitag nächste Woche um 18 Uhr gibt es wieder die Punkte in Echtzeit</p> -->
-		    </section>
-	        <aside id="sidebar">
-	        	<section class="box" id="votenowbox">
-	        		<h2 class="title">Jetzt Voten</h2>
-	        		<div class="content">
-	        			<ul class="clearfix"></ul>
-	        		</div>
-	        	</section>
-                <section class="box" id="akt-folge">
-                    <h2 class="title">Aktuelle Folge</h2>
-                    <div class="content">
-                        <a href="http://youtube.com/watch?v=wv4tqgtwkjU" target="_blank" class="youtube-thumbnail">
-                            <img src="http://img.youtube.com/vi/wv4tqgtwkjU/0.jpg" width="100%">
-                            <img src="img/play.png" class="playbutton">
-                        </a>
-                    </div>
-                </section>
-	        </aside>
-	        </div>
-		</div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/vendor/moment.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-54327419-1');ga('send','pageview');
-        </script>
+    <body ng-controller="AppCtrl">
+        <div class="wrapper">
+            
+        
+        <h1 class="title">TubeClash Voting Ergebnisse</h1>
+        <p>Auf dieser Seite seht ihr die <strong>aktuelle Rangliste</strong> des #TubeClash Votings.<br>Außerdem könnt ihr auch gleich für eure Lieblings-Kandidaten voten.</p>
+        
+        <a href="#" id="reload-button" ng-click="getVotes()"><i class="fa fa-refresh"></i> Aktualisieren</a>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Stimmen</th>
+                    <th>Vote</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="clasher in scoreboard | orderBy:'-votes'">
+                    <td>{{$index + 1}}.</td>
+                    <td>{{clasher.name}}</td>
+                    <td>{{clasher.votes}}</td>
+                    <td><a href="http://youtube.com/watch?v={{clasher.videoID}}" target="_blank"><i class="fa fa-arrow-up"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        </div>
+        
+        <script type="text/javascript" src="./bower_components/angularjs/angular.min.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
     </body>
 </html>
