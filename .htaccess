@@ -215,7 +215,7 @@ AddDefaultCharset utf-8
     RewriteEngine On
     
     RewriteCond %{HTTPS} off
-    RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+    RewriteRule (.*) https://apps.bahuma.io/$1 [R=301,L]
     
     RewriteCond %{http_host} !^apps\.bahuma\.io [NC] 
     Rewriterule ^(.*)$ https://apps.bahuma.io/$1 [L,R=301]
