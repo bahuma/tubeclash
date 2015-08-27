@@ -107,4 +107,19 @@ app.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
     }
     
     $scope.getVotes();
+    
+    
+    
+    
+    
+    $scope.imprintVisible = false;
+    
+    $scope.toggleImprint = function() {
+        console.log("yolo");
+        console.log($scope.imprintVisible);
+        if ($scope.imprintVisible)
+            $scope.imprintVisible = false;
+        else
+            $scope.imprintVisible = true;
+    }
 }]);

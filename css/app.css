@@ -80,4 +80,11 @@ strong, b {
         .wrapper table tbody tr td i.fa:hover {
           color: #E60E0E; }
 
+#imprint-toggle {
+  margin-top: 1em;
+  display: block; }
+
+#imprint-wrapper {
+  text-align: left; }
+
 /*# sourceMappingURL=app.css.map */

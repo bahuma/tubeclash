@@ -58,6 +58,19 @@
             </tbody>
         </table>
         
+        <a ng-click="toggleImprint()" href id="imprint-toggle">Impressum</a>
+        
+        <div ng-show="imprintVisible" id="imprint-wrapper">
+            <p>Verantwortlich für den Inhalt:</p>
+            <p><strong>Max Bachhuber</strong><br>
+            <a href="https://bahuma.io" target="_blank">Bahuma</a><br>
+            Mallerstetter Str. 6<br>
+            92345 Dietfurt<br><br>
+            Telefon: 08464 602654<br>
+            Telefax: 08464 6029824<br>
+            E-Mail: <a href="mailto:info@bahuma.io">info@bahuma.io</a></p>
+        </div>
+        
         </div>
         
         <script type="text/javascript" src="./bower_components/angularjs/angular.min.js"></script>
