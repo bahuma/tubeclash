@@ -22,6 +22,7 @@
   "dependencies": {
     "angularjs": "~1.4.4",
     "normalize.css": "~3.0.3",
-    "components-font-awesome": "~4.4.0"
+    "components-font-awesome": "~4.4.0",
+    "angular-google-chart": "~0.0.11"
   }
 }

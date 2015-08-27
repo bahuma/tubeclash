@@ -44,19 +44,32 @@
             <thead>
                 <tr>
                     <th colspan="2">Name</th>
-                    <th>Stimmen</th>
+                    <th>Upvotes</th>
+                    <th>Downvotes</th>
+                    <th>Score</th>
                     <th>Vote</th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="clasher in scoreboard | orderBy:'-votes'">
+                <tr ng-repeat-start="clasher in scoreboard | orderBy:'-score'">
                     <td>{{$index + 1}}.</td>
                     <td>{{clasher.name}}</td>
-                    <td>{{clasher.votes}}</td>
-                    <td><a href="http://youtube.com/watch?v={{clasher.videoID}}" target="_blank"><i class="fa fa-arrow-up"></i></a></td>
+                    <td>{{clasher.upvotes}}</td>
+                    <td>{{clasher.downvotes}}</td>
+                    <td>{{clasher.score}}</td>
+                    <td><a href="http://youtube.com/watch?v={{clasher.videoID}}" target="_blank"><i class="fa fa-arrow-up"></i></a><a ng-click="toggleGraphFor($index)"><i class="fa fa-gear"></i></a></td>
+                </tr>
+                <tr ng-show="clasher.chartVisible" ng-repeat-end>
+                    <td colspan="6">
+                        <div google-chart chart="clasher.chartObject" style="height:300px;width:100%"></div>
+                    </td>
                 </tr>
             </tbody>
         </table>
+        
+        <div google-chart chart="chartObject" style="height:200px;width:100%"></div>
+        
+        <a ng-click="generateGraphData(scoreboard[0])">Get Chart Data</a>
         
         <a ng-click="toggleImprint()" href id="imprint-toggle">Impressum</a>
         
@@ -74,6 +87,7 @@
         </div>
         
         <script type="text/javascript" src="./bower_components/angularjs/angular.min.js"></script>
+        <script type="text/javascript" src="./bower_components/angular-google-chart/ng-google-chart.js"></script>
         <script type="text/javascript" src="./js/app.js"></script>
     </body>
 </html>
